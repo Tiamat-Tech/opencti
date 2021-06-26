@@ -1,0 +1,58 @@
+{
+  "app": {
+    "port": 4000,
+    "app_logs": {
+      "logs_level": "debug",
+      "logs_files": true,
+      "logs_console": true,
+      "logs_max_files": 7,
+      "logs_directory": "./logs"
+    },
+    "audit_logs": {
+      "logs_files": false,
+      "logs_console": false,
+      "logs_max_files": 7,
+      "logs_directory": "./logs"
+    },
+    "request_timeout": 240000,
+    "session_timeout": 1200000,
+    "session_manager": "shared",
+    "base_path": "",
+    "platform_demo": true,
+    "performance_logger": false,
+    "admin": {
+      "email": "admin@opencti.io",
+      "password": "Passw02#Passw02#",
+      "token": "1197406e-9d93-4d87-be55-a4f96f400995"
+    }
+  },
+  "redis": {
+    "hostname": "opencti.io",
+    "port": 6379
+  },
+  "elasticsearch": {
+    "url": "http://elastic:shos001@opencti.io:9200"
+  },
+  "minio": {
+    "endpoint": "opencti.io",
+    "port": 9000,
+    "use_ssl": false,
+    "access_key": "G0X18WESN84ZVHEL8P5Z",   "secret_key": "ryEhdW0Y85mcJHEguOJeOPgGhjTOWNG+58LIOnmX"
+  },
+  "rabbitmq": {
+    "hostname": "opencti.io",
+    "port": 5672,
+    "port_management": 15672,
+    "management_ssl": false,
+    "username": "admin",
+    "password": "shos001ihcsc10"
+  },
+  "jwt": {
+    "dev_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkdXJhdGlvbiI6IlA5OVkiLCJuYW1lIjoiRGVmYXVsdCIsImNyZWF0ZWRfYXQiOiIyMDE4LTEwLTIxVDE2OjE3OjUzLjc5M1oiLCJpZCI6IjliNDQ1YjEyLTdkYTQtNTFjZi1hZTBlLThhY2EwYjJmZDMzMSIsInJldm9rZWQiOmZhbHNlLCJpc3N1ZXIiOiJPcGVuQ1RJIiwiaWF0IjoxNTQwMzI1MjE3fQ.QWDr_DCrcH9ixtd9FFwsYfnR7hHoXUk4Yfxip9GP5Og"
+  },
+  "providers": {
+    "local": {
+      "strategy": "LocalStrategy"
+    }
+  }
+}
